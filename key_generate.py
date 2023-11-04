@@ -1,6 +1,7 @@
 from cryptography.fernet import Fernet
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 from cryptography.hazmat.primitives import hashes
 import base64
 import threading
@@ -15,7 +16,7 @@ warnings.filterwarnings('ignore')
 
 # 生成随机密钥
 def generate_key():
-    return ''.join(random.choices(string.ascii_letters + string.digits, k=8))
+    return ''.join(random.choices(string.ascii_letters + string.digits, k=6))
 
 # 密码加密函数
 def encrypt_password(password: str, message: str):
@@ -62,7 +63,7 @@ print('\r' + ' ' * 100)
 
 
 # 创建守护线程
-daemon_thread = threading.Thread(target=task, kwargs={"duration": 24 * 60 * 60},name='DaemonThread', daemon=True)
+daemon_thread = threading.Thread(target=task, kwargs={"duration": 7 * 24 * 60 * 60},name='DaemonThread', daemon=True)
 saved=False
 
 # 注册退出处理函数
