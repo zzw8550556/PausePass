@@ -16,15 +16,15 @@
         pip install cryptography  
         pip install readchar  
 ### 2.生成盐  
-        python salt_generate.py 
+        python salt_generate.py  
 会在本目录下生成 'salt.pkl' 文件，用于保存盐  
-        python salt_display.py 
+        python salt_display.py  
 生成 'salt.pkl' 文件后，运行可以显示盐的内容  
 ### 3.运行  
-        python key_generate.py 
+        python key_generate.py  
 会显示生成的密码，按回车后密码不再显示，程序运行一天后，会在本目录下生成 'key.pkl' 文件，密码保存在里面   
 当按回车后密码不再显示之后，为防止紧急情况，当按ctrl+c退出程序时，会立即在本目录下生成 'key.pkl' 文件，密码保存在里面  
-        python key_display.py 
+        python key_display.py  
 生成 'key.pkl' 文件后，运行可以显示密码的内容，注意显示密码需要口令，口令为'pwd123'  
   
 ## 提示  
