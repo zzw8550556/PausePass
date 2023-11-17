@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'c:\Users\zzw85\Desktop\proj\delay_key\pausepass.ui'
+# Form implementation generated from reading ui file '.\pausepass.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
